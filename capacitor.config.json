@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ionic-angular-faculdade",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
