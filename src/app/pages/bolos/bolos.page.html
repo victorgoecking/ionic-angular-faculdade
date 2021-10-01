@@ -9,10 +9,10 @@
   <ion-list class="ios list-ios hydrated">
 
 
-    <ion-item class="" slot="start">
-      <!-- <ion-avatar slot="start" > -->
-        <img src="https://www.receitadevovo.com.br/_next/image?url=https%3A%2F%2Famp.receitadevovo.com.br%2Fwp-content%2Fuploads%2F2021%2F02%2Fbolo-de-abacaxi.jpg&w=1920&q=75">
-      <!-- </ion-avatar> -->
+    <ion-item class="" slot="start" *ngFor="let bolo of bolos">
+      
+        <img src={{bolo.urlImagem}}>
+
         <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
           <h2>Bolo caramelo de abacaxi</h2>
           <h3>apenas R$ 18,00</h3>
@@ -20,17 +20,6 @@
         </ion-label>
     </ion-item>
 
-    <ion-item class="" slot="start">
-      <!-- <ion-avatar slot="start" > -->
-        <img src="https://www.receitadevovo.com.br/_next/image?url=https%3A%2F%2Famp.receitadevovo.com.br%2Fwp-content%2Fuploads%2F2021%2F02%2Fbolo-de-abacaxi.jpg&w=1920&q=75">
-      <!-- </ion-avatar> -->
-        <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
-          <h2>Bolo caramelo de abacaxi</h2>
-          <h3>apenas R$ 18,00</h3>
-          <p>A banana é um tipo de pseudofruto rico em...</p>
-        </ion-label>
-    </ion-item>
-  
   </ion-list>
 
       

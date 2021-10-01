@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BolosService } from './bolos.service';
 
 @Component({
   selector: 'app-bolos',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BolosPage implements OnInit {
 
-  // bolo: Bolo[];
 
-  constructor() { }
+  constructor(private bolosService: BolosService) { }
+
+  public bolos = this.bolosService.listarBolos();
+
 
   ngOnInit() {
+    return this.bolos;
   }
 
 }

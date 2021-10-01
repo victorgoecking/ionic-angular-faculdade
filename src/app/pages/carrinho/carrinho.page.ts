@@ -9,9 +9,7 @@ import { AlertController, LoadingController } from '@ionic/angular';
 export class CarrinhoPage implements OnInit {
 
   constructor(
-    public loadingController: LoadingController,
-    private alertController: AlertController
-    ) {}
+    public loadingController: LoadingController, private alertController: AlertController) {}
 
   ngOnInit() {
   }
