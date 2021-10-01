@@ -6,21 +6,33 @@
 
 <ion-content>
 
-  <ion-list class="ios list-ios hydrated">
+  <ion-list>
+    <ion-item button slot="start" *ngFor="let bolo of bolos">
 
-
-    <ion-item class="" slot="start" *ngFor="let bolo of bolos">
-      
         <img src={{bolo.urlImagem}}>
 
         <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
-          <h2>Bolo caramelo de abacaxi</h2>
-          <h3>apenas R$ 18,00</h3>
-          <p>A banana é um tipo de pseudofruto rico em...</p>
+          <h2>{{bolo.nome}}</h2>
+          <ion-text color="primary">Por apenas R$ {{bolo.valor}}</ion-text>
+          <p>{{bolo.descricao}}</p>
         </ion-label>
+        
     </ion-item>
-
   </ion-list>
 
-      
+
+  <!--(click)="teste()" ->>
+<!-- <ion-list>
+   <ion-item button *ngFor="let bolo of bolos">  
+    <ion-thumbnail slot="start" size="large" >
+      <img src={{bolo.urlImagem}}>
+    </ion-thumbnail>
+    <ion-label>
+      <h2>{{bolo.nome}}</h2>
+      <p>apenas R$ {{bolo.valor}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>  -->
+
+
 </ion-content>
