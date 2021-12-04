@@ -1,0 +1,54 @@
+{
+    "bolos": [
+            {
+                "id": 1,
+                "nome": "Bolo caramelo de abacaxi",
+                "valor": 19.00,
+                "imgUrl": "https://www.receitadevovo.com.br/_next/image?url=https%3A%2F%2Famp.receitadevovo.com.br%2Fwp-content%2Fuploads%2F2021%2F02%2Fbolo-de-abacaxi.jpg&w=1920&q=75",
+                "descricao": "A banana é um tipo de pseudofruto ..."
+            },
+            {
+                "id": 2,
+                "nome": "Bolo fofinho de claras",
+                "valor": 15.00,
+                "imgUrl": "https://www.receitadevovo.com.br/_next/image?url=https%3A%2F%2Famp.receitadevovo.com.br%2Fwp-content%2Fuploads%2F2021%2F02%2Fbolo-de-claras.jpg&w=1920&q=75",
+                "descricao": "O castella ou kasutera é um popular bolo japonês feito à base de açúcar, farinha, ovos e xarope de milho ..."
+            },
+            {
+                "id": 3,
+                "nome": "Bolo de Nutella",
+                "valor": 28,
+                "imgUrl": "https://amp.receitadevovo.com.br/wp-content/uploads/2020/10/bolo-de-nutella.jpg",
+                "descricao": "Nutella é um doce que todo mundo ama, por isso os bolos de nutella sempre fazem o maior sucesso, e que tal você experimentar?"
+            },
+            {
+                "id": 4,
+                "nome": "Bolo de morango",
+                "valor": 25,
+                "imgUrl": "https://www.receitasagora.com.br/wp-content/uploads/2020/09/receita-de-bolo-de-morango-com-leite-condensado-1.jpg",
+                "descricao": "Traduzido do inglês-Bolo de morango é um bolo que usa morango como ingrediente principal. Morangos podem ser usados ​​na massa do bolo, em cima dos bolos e na cobertura do bolo de morango. Alguns são servidos resfriados ou parcialmente congelados e às vezes são servidos como um prato do Dia dos Namorados."
+            },
+            {
+                "id": 5,
+                "nome": "Bolo de trigo",
+                "valor": 15,
+                "imgUrl": "https://t2.rg.ltmcdn.com/pt/images/1/8/3/bolo_de_trigo_simples_381_orig.jpg",
+                "descricao": "Um bolo simples e saboroso, ótimo para servir com café."
+            },
+            {
+                "id": 6,
+                "nome": "Bolo de brigadeiro",
+                "valor": 20,
+                "imgUrl": "https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-bolo-brigadeiro.jpg?quality=85&strip=info",
+                "descricao": "Um bolo clássico que todo mundo ama com aquele gostinho de quero mais e ótimo para festas."
+            },
+            {
+                "id": 7,
+                "nome": "Bolo de cenoura",
+                "valor": 18,
+                "imgUrl": "https://comidinhasdochef.com/wp-content/uploads/2020/02/Bolo-de-Cenoura-Tudo-Gostoso.jpg",
+                "descricao": "A origem desta receita é incerta, mas muitos historiadores acreditam que sua origem se deu em pudins de cenoura que faziam parte da alimentação dos europeus na Idade Média, época onde açucares e adoçantes eram caros, por isso, muitas pessoas usavam cenouras como substituto do açúcar."
+            }
+            
+    ]
+}

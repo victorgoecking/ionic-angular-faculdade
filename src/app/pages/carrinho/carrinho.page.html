@@ -1,12 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
 
-      <ion-item>
-        <ion-button size="large" fill="clear" slot="start"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+      <ion-buttons size="large" fill="clear" slot="start">
+        <ion-back-button defaultHref="/detalhe-bolo/{{bolo?.id}}" text="Voltar">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-back-button>
+      </ion-buttons>
+
+      <ion-title>
         <ion-label>Seu pedido</ion-label>
-      </ion-item>
-    
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -20,8 +22,8 @@
           <h2>Bolo escolhido</h2>
         </ion-label>
       </ion-list-header>
-      <ion-item>
-        <ion-label>Bolo de Milho por $20,00</ion-label>
+      <ion-item lines="none">
+        <ion-label>{{bolo?.nome}} por R$ {{bolo?.valor}}</ion-label>
       </ion-item>
     </ion-list>
   </ion-card>
@@ -29,24 +31,62 @@
 
   <ion-card>
     <ion-list>
-      <ion-list-header color="medium" lines="inset">
+      <ion-list-header color="medium" lines="none">
         <ion-label>
           <h2>Dados para entrega</h2>
         </ion-label>
       </ion-list-header>
-      <ion-item>
-        <ion-label>Victor</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>002 0201</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>Rua de esquecida, 0 - CEP 00000-000</ion-label>
-      </ion-item>
-    </ion-list>
+
+        <ion-item>
+          <ion-label position="floating" color="medium">Seu nome</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating" color="medium">Telefone</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating" color="medium">Endereço</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+
+      </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-button (click)="carregandoConfirmacaoPedido()" expand="block" size="large" color primary fill="outline"><ion-icon slot="start" name="cart-outline"></ion-icon> Confirmar pedido</ion-button>
   </ion-card>
+
+  <!-- <form class="ion-margin">
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="floating" color="medium">Bolo Selecionado</ion-label>
+      <ion-input [(ngModel)]="pedido.nomePedido" name="nomePedido"></ion-input>
+    </ion-item>
+
+    <div>
+      <h5 class="ion-margin-start">Digite seu endereço</h5>
+
+      <ion-item>
+        <ion-label position="floating" color="medium">Seu nome</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="medium">Telefone</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="medium">Endereço</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </div>
+
+    <div class="ion-margin-top">
+      <ion-button (click)="carregandoConfirmacaoPedido()" expand="block" size="large" color primary fill="outline"><ion-icon slot="start" name="cart-outline"></ion-icon> Finalizar pedido</ion-button>
+    </div>
+  </form> -->
+
 </ion-content>

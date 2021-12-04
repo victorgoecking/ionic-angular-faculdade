@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { BolosService } from './bolos.service';
+import { BolosService } from '../bolos/bolos.service';
+import { Bolo } from '../../interfaces/bolo';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-bolos',
@@ -8,14 +10,17 @@ import { BolosService } from './bolos.service';
 })
 export class BolosPage implements OnInit {
 
+  bolos: Bolo[];
+  bolo;
 
-  constructor(private bolosService: BolosService) { }
-
-  public bolos = this.bolosService.listarBolos();
-
+  constructor(private bolosService: BolosService, private http: HttpClient) { }
 
   ngOnInit() {
-    return this.bolos;
+    this.bolosService.listarBolos().subscribe((data) => {
+      this.bolos = data;
+    });
   }
+
+
 
 }

@@ -15,11 +15,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/bolos/bolos.module').then( m => m.BolosPageModule)
   },
   {
-    path: 'detalhe-bolo',
+    path: 'detalhe-bolo/:id',
     loadChildren: () => import('./pages/detalhe-bolo/detalhe-bolo.module').then( m => m.DetalheBoloPageModule)
   },
   {
-    path: 'carrinho',
+    path: 'carrinho/:id',
     loadChildren: () => import('./pages/carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
   }
 ];

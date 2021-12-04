@@ -6,33 +6,18 @@
 
 <ion-content>
 
-  <ion-list>
-    <ion-item button slot="start" *ngFor="let bolo of bolos">
+  <ion-list >
+    <ion-item *ngFor="let b of bolos" [routerLink]="['/detalhe-bolo', b.id]" slot="start">
 
-        <img src={{bolo.urlImagem}}>
+        <img src={{b?.imgUrl}} alt={{b?.name}}>
 
         <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
-          <h2>{{bolo.nome}}</h2>
-          <ion-text color="primary">Por apenas R$ {{bolo.valor}}</ion-text>
-          <p>{{bolo.descricao}}</p>
+          <h2>{{b?.nome}}</h2>
+          <ion-text color="primary">Por apenas R$ {{b?.valor}}</ion-text>
+          <p>{{b?.descricao}}</p>
         </ion-label>
         
     </ion-item>
   </ion-list>
-
-
-  <!--(click)="teste()" ->>
-<!-- <ion-list>
-   <ion-item button *ngFor="let bolo of bolos">  
-    <ion-thumbnail slot="start" size="large" >
-      <img src={{bolo.urlImagem}}>
-    </ion-thumbnail>
-    <ion-label>
-      <h2>{{bolo.nome}}</h2>
-      <p>apenas R$ {{bolo.valor}}</p>
-    </ion-label>
-  </ion-item>
-</ion-list>  -->
-
 
 </ion-content>
